@@ -61,6 +61,12 @@ Disable Property: `org.springframework.cloud.bindings.boot.artemis.enable`
 | `spring.artemis.pool.time-between-expiration-check` | `{pool.time-between-expiration-check}` |
 | `spring.artemis.pool.use-anonymous-producers`       | `{pool.use-anonymous-producers}`       |
 
+### Application Configuration Service for VMware Tanzu
+Type: `tanzu-acs`
+Disable Property: `org.springframework.cloud.bindings.boot.tanzu-acs.enable`
+
+All properties in a service binding `Secret` with a type of "tanzu-acs" will be made available in the environment.
+
 ### Cassandra
 Type: `cassandra`
 Disable Property: `org.springframework.cloud.bindings.boot.cassandra.enable`
