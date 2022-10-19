@@ -63,7 +63,7 @@ final class EurekaBindingsPropertiesProcessorTest {
     void disabled() {
         environment.setProperty("org.springframework.cloud.bindings.boot.eureka.enable", "false");
 
-        new KafkaBindingsPropertiesProcessor().process(environment, bindings, properties);
+        new EurekaBindingsPropertiesProcessor().process(environment, bindings, properties);
 
         assertThat(properties).isEmpty();
     }
